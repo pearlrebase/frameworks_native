@@ -77,7 +77,7 @@ cc_defaults {
         "libhwbinder",
     ],
     product_variables: {
-        aosp: {
+        pearl: {
             uses_qcom_um_3_18_family: {
                 header_libs: [
                     "display_intf_headers_msm8996",
@@ -195,7 +195,7 @@ cc_library_shared {
         thin: true,
     },
     product_variables: {
-        aosp: {
+        pearl: {
             apply_msm8974_1440p_egl_workaround: {
                 cflags: ["-DALLOW_TOO_LARGE_DIMENSIONS"],
             },
@@ -248,7 +248,7 @@ cc_binary {
         "libsigchain",
     ],
     product_variables: {
-        aosp: {
+        pearl: {
             uses_qcom_um_3_18_family: {
                 include_dirs: [
                     "hardware/qcom/display-caf/msm8996/include",
